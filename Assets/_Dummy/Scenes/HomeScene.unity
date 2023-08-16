@@ -1928,11 +1928,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b5fcdebb984964596693327e5bfe6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnShowInter: {fileID: 0}
-  btnShowRewarded: {fileID: 0}
-  btnShowRewardedInter: {fileID: 0}
-  btnShowBanner: {fileID: 0}
-  btnShowAOA: {fileID: 0}
+  btnShowInter: {fileID: 103158434}
+  btnShowRewarded: {fileID: 1487591346}
+  btnShowRewardedInter: {fileID: 302985027}
+  btnShowBanner: {fileID: 1613883243}
+  btnShowAOA: {fileID: 503056597}
 --- !u!1 &1992250907
 GameObject:
   m_ObjectHideFlags: 0
