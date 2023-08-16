@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class HomeScene : MonoBehaviour
 {
+    [SerializeField] private MaxManager maxManager;
+    
     [SerializeField] private Button btnShowInter;
     [SerializeField] private Button btnShowRewarded;
     [SerializeField] private Button btnShowRewardedInter;
@@ -23,26 +25,26 @@ public class HomeScene : MonoBehaviour
 
     private void ShowInterstitial()
     {
-        
+        maxManager.ShowInterstitial();
     }
 
     private void ShowRewarded()
     {
-        
+        maxManager.ShowRewardedAd();
     }
 
     private void ShowRewardedInterstitial()
     {
-        
+        maxManager.ShowRewardedInterstitialAd();
     }
 
     private void ShowBanner()
     {
-        
+        maxManager.ToggleBannerVisibility();
     }
 
     private void ShowAppOpenAd()
     {
-        
+        maxManager.ShowAppOpenAd();
     }
 }
