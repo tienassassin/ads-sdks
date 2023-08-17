@@ -14,6 +14,19 @@ public class HomeScene : MonoBehaviour
     [SerializeField] private Button btnShowBanner;
     [SerializeField] private Button btnShowAOA;
 
+    [SerializeField] private Text txtLog;
+    [SerializeField] private ScrollRect scrLog;
+
+    private void OnEnable()
+    {
+        Application.logMessageReceived += RenderLog;
+    }
+
+    private void OnDisable()
+    {
+        Application.logMessageReceived -= RenderLog;
+    }
+
     private void Start()
     {
         btnShowInter.onClick.AddListener(ShowInterstitial);
@@ -21,6 +34,13 @@ public class HomeScene : MonoBehaviour
         btnShowRewardedInter.onClick.AddListener(ShowRewardedInterstitial);
         btnShowBanner.onClick.AddListener(ShowBanner);
         btnShowAOA.onClick.AddListener(ShowAppOpenAd);
+    }
+
+    private void RenderLog(string msg, string stackTrace, LogType type)
+    {
+        if (type != LogType.Error && type != LogType.Exception && !msg.Contains("MAX >")) return;
+        txtLog.text += $"\n+ {msg}";
+        ScrollToBot();
     }
 
     private void ShowInterstitial()
@@ -46,5 +66,10 @@ public class HomeScene : MonoBehaviour
     private void ShowAppOpenAd()
     {
         maxManager.ShowAppOpenAd();
+    }
+
+    public void ScrollToBot()
+    {
+        scrLog.normalizedPosition = Vector2.zero;
     }
 }

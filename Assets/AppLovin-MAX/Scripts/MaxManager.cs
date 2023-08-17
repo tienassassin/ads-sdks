@@ -25,11 +25,11 @@ public class MaxManager : MonoBehaviour
     private void Start()
     {
 #if UNITY_EDITOR
-        appOpenAdUnitId = "DUMMY_AD_UNIT_ID";
-        interstitialAdUnitId = "DUMMY_AD_UNIT_ID";
-        rewardedAdUnitId = "DUMMY_AD_UNIT_ID";
-        rewardedInterstitialAdUnitId = "DUMMY_AD_UNIT_ID";
-        bannerAdUnitId = "DUMMY_AD_UNIT_ID";
+        appOpenAdUnitId = "DUMMY_APP_OPEN_AD_UNIT_ID";
+        interstitialAdUnitId = "DUMMY_INTERSTITIAL_AD_UNIT_ID";
+        rewardedAdUnitId = "DUMMY_REWARDED_AD_UNIT_ID";
+        rewardedInterstitialAdUnitId = "DUMMY_REWARDED_INTERSTITIAL_AD_UNIT_ID";
+        bannerAdUnitId = "DUMMY_BANNER_AD_UNIT_ID";
 #elif UNITY_ANDROID
         appOpenAdUnitId = androidAdUnitData.appOpenAdUnitId;
         interstitialAdUnitId = androidAdUnitData.interstitialAdUnitId;
@@ -46,7 +46,7 @@ public class MaxManager : MonoBehaviour
 
         MaxSdkCallbacks.OnSdkInitializedEvent += configuration =>
         {
-            Debug.Log("MAX SDK Initialized");
+            Debug.Log("MAX > Initialized");
             
             InitializeAppOpenAds();
             InitializeInterstitialAds();
