@@ -38,8 +38,8 @@
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-tasks-17.2.1.aar</file>
   </files>
   <settings>
-    <setting name="androidAbis" value="armeabi-v7a" />
-    <setting name="bundleId" value="com.duztine.mobilesdk" />
+    <setting name="androidAbis" value="arm64-v8a,armeabi-v7a" />
+    <setting name="bundleId" value="com.gangster.vs.purple.monster.fight" />
     <setting name="explodeAars" value="True" />
     <setting name="gradleBuildEnabled" value="True" />
     <setting name="gradlePropertiesTemplateEnabled" value="False" />

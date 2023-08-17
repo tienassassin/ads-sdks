@@ -51,7 +51,7 @@ public class MaxManager : MonoBehaviour
             InitializeAppOpenAds();
             InitializeInterstitialAds();
             InitializeRewardedAds();
-            InitializeRewardedInterstitialAds();
+            // InitializeRewardedInterstitialAds();
             InitializeBannerAds();
         };
         
@@ -76,6 +76,7 @@ public class MaxManager : MonoBehaviour
 
     private void LoadAppOpenAd()
     {
+        Debug.Log("MAX > AppOpenAd > Loading...");
         MaxSdk.LoadAppOpenAd(appOpenAdUnitId);
     }
 
@@ -144,6 +145,7 @@ public class MaxManager : MonoBehaviour
 
     private void LoadInterstitial()
     {
+        Debug.Log("MAX > Interstitial > Loading...");
         MaxSdk.LoadInterstitial(interstitialAdUnitId);
     }
     
@@ -215,6 +217,7 @@ public class MaxManager : MonoBehaviour
 
     private void LoadRewardedAd()
     {
+        Debug.Log("MAX > Rewarded > Loading...");
         MaxSdk.LoadRewardedAd(rewardedAdUnitId);
     }
 
@@ -301,6 +304,7 @@ public class MaxManager : MonoBehaviour
 
     private void LoadRewardedInterstitialAd()
     {
+        Debug.Log("MAX > Rewarded Inter > Loading...");
         MaxSdk.LoadRewardedInterstitialAd(rewardedInterstitialAdUnitId);
     }
 
@@ -378,8 +382,11 @@ public class MaxManager : MonoBehaviour
         MaxSdkCallbacks.Banner.OnAdClickedEvent += OnBannerAdClickedEvent;
         MaxSdkCallbacks.Banner.OnAdRevenuePaidEvent += OnBannerAdRevenuePaidEvent;
 
-        MaxSdk.CreateBanner(bannerAdUnitId, MaxSdkBase.BannerPosition.TopCenter);
-        MaxSdk.SetBannerBackgroundColor(bannerAdUnitId, Color.white);
+        MaxSdk.CreateBanner(bannerAdUnitId, MaxSdkBase.BannerPosition.BottomCenter);
+        MaxSdk.SetBannerPlacement(bannerAdUnitId, "Banner");
+        MaxSdk.SetBannerBackgroundColor(bannerAdUnitId, Color.clear);
+        
+        ToggleBannerVisibility();
     }
     
     public void ToggleBannerVisibility()
