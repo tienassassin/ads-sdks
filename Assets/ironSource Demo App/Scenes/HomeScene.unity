@@ -1760,6 +1760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iSManager: {fileID: 6343279549219652785}
+  admobManager: {fileID: 7238105342274933611}
   btnShowInter: {fileID: 103158434}
   btnShowRewarded: {fileID: 1487591346}
   btnShowRewardedInter: {fileID: 302985027}
@@ -2247,5 +2248,77 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ced824e31ed431c40a1f3e060c78084d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &7238105342274933609
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1352.9928
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 521.1146
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.70833874
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380309740627660348, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134282926211669638, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+      propertyPath: m_Name
+      value: AdmobManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+--- !u!114 &7238105342274933611 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3434716744708587867, guid: 05ae8b68a5ebcbe4ab980203795c2586, type: 3}
+  m_PrefabInstance: {fileID: 7238105342274933609}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85dcc8edef06e554f81c88f8d9f33775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

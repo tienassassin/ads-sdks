@@ -35,6 +35,7 @@ public class IronSourceManager : MonoBehaviour
         IronSource.Agent.init(appKey);
 
         LoadInterstitial();
+        ToggleBannerVisibility();
     }
 
     void OnEnable()

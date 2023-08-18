@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class HomeScene : MonoBehaviour
 {
     [SerializeField] private IronSourceManager iSManager;
+    [SerializeField] private AdmobManager admobManager;
+    
     [SerializeField] private Button btnShowInter;
     [SerializeField] private Button btnShowRewarded;
     [SerializeField] private Button btnShowRewardedInter;
@@ -38,7 +40,7 @@ public class HomeScene : MonoBehaviour
     
     private void RenderLog(string msg, string stackTrace, LogType type)
     {
-        if (type != LogType.Error && type != LogType.Exception && !msg.Contains("iS >")) return;
+        if (type != LogType.Error && type != LogType.Exception && !msg.Contains("iS >") && !msg.Contains("Admob >")) return;
         msg = Regex.Replace(msg, @"(AdInfo|And AdInfo).*", "");
         txtLog.text += $"\n+ {msg}";
         ScrollToBot();
@@ -66,7 +68,7 @@ public class HomeScene : MonoBehaviour
 
     private void ShowAppOpenAd()
     {
-           
+        admobManager.ShowAOA();
     }
     
     public void ScrollToBot()
