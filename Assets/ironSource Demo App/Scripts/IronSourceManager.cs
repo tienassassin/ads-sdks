@@ -191,6 +191,7 @@ public class IronSourceManager : MonoBehaviour
 
     public void OnGUI()
     {
+        return;
         GUI.backgroundColor = Color.blue;
         GUI.skin.button.fontSize = (int)(0.035f * Screen.width);
 
@@ -229,11 +230,11 @@ public class IronSourceManager : MonoBehaviour
     }
     void RewardedVideoOnAdAvailable(IronSourceAdInfo adInfo)
     {
-        Debug.Log("iS > Rewarded > Loaded. AdInfo " + adInfo.ToString());
+        Debug.Log("iS > Rewarded > Available. AdInfo " + adInfo.ToString());
     }
     void RewardedVideoOnAdUnavailable()
     {
-        Debug.Log("iS > Rewarded > Load failed.");
+        Debug.Log("iS > Rewarded > Unavailable.");
     }
     void RewardedVideoOnAdShowFailedEvent(IronSourceError ironSourceError,IronSourceAdInfo adInfo)
     {

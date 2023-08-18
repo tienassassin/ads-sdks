@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -38,6 +39,7 @@ public class HomeScene : MonoBehaviour
     private void RenderLog(string msg, string stackTrace, LogType type)
     {
         if (type != LogType.Error && type != LogType.Exception && !msg.Contains("iS >")) return;
+        msg = Regex.Replace(msg, @"(AdInfo|And AdInfo).*", "");
         txtLog.text += $"\n+ {msg}";
         ScrollToBot();
     }
