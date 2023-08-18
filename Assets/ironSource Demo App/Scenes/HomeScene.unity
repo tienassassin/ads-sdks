@@ -1759,11 +1759,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b5fcdebb984964596693327e5bfe6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iSManager: {fileID: 6343279549219652785}
   btnShowInter: {fileID: 103158434}
   btnShowRewarded: {fileID: 1487591346}
   btnShowRewardedInter: {fileID: 302985027}
   btnShowBanner: {fileID: 1613883243}
   btnShowAOA: {fileID: 503056597}
+  txtLog: {fileID: 2112285153}
+  scrLog: {fileID: 1463082930}
 --- !u!1 &1771311701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,3 +2238,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fe5db643cac0da4ab49a41dc66b7f71, type: 3}
+--- !u!114 &6343279549219652785 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9930806467028662, guid: 6fe5db643cac0da4ab49a41dc66b7f71, type: 3}
+  m_PrefabInstance: {fileID: 6343279549219652784}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced824e31ed431c40a1f3e060c78084d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
