@@ -7,7 +7,7 @@
 
 __SDKs are completed__:
 - [x] AppLovin MAX
+- [x] ironSource
 
 __SDKs are in progress__:
-- [ ] ironSource
 - [ ] Google Admob
