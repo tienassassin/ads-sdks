@@ -21,12 +21,12 @@ public class HomeScene : MonoBehaviour
 
     private void OnEnable()
     {
-        Application.logMessageReceived += RenderLog;
+        Application.logMessageReceivedThreaded += RenderLog;
     }
 
     private void OnDisable()
     {
-        Application.logMessageReceived -= RenderLog;
+        Application.logMessageReceivedThreaded -= RenderLog;
     }
 
     private void Start()
@@ -74,5 +74,13 @@ public class HomeScene : MonoBehaviour
     public void ScrollToBot()
     {
         scrLog.normalizedPosition = Vector2.zero;
+    }
+
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        if (hasFocus)
+        {
+            admobManager.ShowAOA();
+        }
     }
 }
